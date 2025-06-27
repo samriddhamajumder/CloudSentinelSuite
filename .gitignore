@@ -1,0 +1,47 @@
+# Python virtualenv
+venv/
+*.pyc
+__pycache__/
+
+# Terraform noise
+*.tfstate
+*.tfstate.backup
+*.lock.hcl
+.terraform/
+
+# Credentials & binaries
+*.json
+*.exe
+*.zip
+
+# VS Code and OS files
+.vscode/
+.DS_Store
+
+
+# Terraform local state
+*.tfstate
+*.tfstate.backup
+
+# Terraform plugin & provider binaries
+.terraform/
+
+# Terraform variable files with sensitive data
+terraform.tfvars
+
+# IDE and OS junk
+.vscode/
+.DS_Store
+
+# Terraform junk
+.terraform/
+*.tfstate
+*.tfstate.backup
+terraform.tfvars
+*.lock.hcl
+
+# Secrets
+*.env
+*.pem
+*.tfvars
+

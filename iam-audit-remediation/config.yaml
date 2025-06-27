@@ -1,0 +1,27 @@
+# config.yaml
+
+global:
+  enable_remediation: true
+  log_directory: logs/
+  report_file: audit_report_template.json
+
+aws:
+  max_key_age_days: 90
+  check_mfa: true
+  check_inline_policies: true
+  check_wildcard_roles: true
+  disable_old_keys: true
+
+azure:
+  check_guest_users: true
+  check_high_priv_roles: true
+  check_stale_sps: true
+  mfa_check: approx  # Placeholder until full Graph API integration
+  remediation_enabled: false
+
+gcp:
+  max_sa_key_age_days: 90
+  check_wildcard_roles: true
+  check_overprivileged_bindings: true
+  check_broad_scope_members: true
+  remediation_enabled: false
